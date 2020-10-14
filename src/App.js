@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/"/>
+      </Switch>
+    </>
   );
 }
 
