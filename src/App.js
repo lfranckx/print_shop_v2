@@ -3,13 +3,17 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar';
+import Home from './Routes/Home/Home';
 
 function App() {
   return (
     <>
       <Navbar />
       <Switch>
-        <Route path="/"/>
+        <Route 
+          component={Home}
+          path="/"
+        />
       </Switch>
     </>
   );
