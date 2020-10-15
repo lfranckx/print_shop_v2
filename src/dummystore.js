@@ -57,14 +57,6 @@ export default {
             path: "/t-shirt"
         },
         {
-            id: 1,
-            src: "images/img-7.jpg",
-            alt: "T-shirt",
-            text: "This is a sample image. Not an actual item for sale.",
-            label: "T-Shirt",
-            path: "/t-shirt"
-        },
-        {
             id: 8,
             src: "images/img-8.jpg",
             alt: "T-shirt",
@@ -79,6 +71,6 @@ export default {
             text: "This is a sample image. Not an actual item for sale.",
             label: "T-Shirt",
             path: "/t-shirt"
-        },
+        }
     ]
 };
