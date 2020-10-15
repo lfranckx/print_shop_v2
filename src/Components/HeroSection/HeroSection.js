@@ -1,30 +1,31 @@
-import React from 'react';
-import './HerroSection.css';
+import React, { Component } from 'react';
+import './HeroSection.css';
+import { Button } from '../Button/Button';
 
-function HeroSection() {
+export default class HeroSection extends Component  {
+  render() {
     return (
-        <div className="hero-container">
-            <video src="/videos/video-2.mp4" autoPlay loop muted />
-            <h1>TRDMRK CUSTOM PRINTS</h1>
-            <p>Create custom logos and designs for t-shirts and more</p>
-            <div className="hero-btns">
-                <Button 
-                    className="btns" 
-                    btnStyle="btn--outline"
-                    btnSize="btn--large"
-                >
-                    GET STARTED
-                </Button>
-                <Button 
-                    className="btns" 
-                    btnStyle="btn--primary"
-                    btnSize="btn--large"
-                >
-                    WATCH TRAILER <i className="far fa-play-circle" />
-                </Button>
-            </div>
+      <div className='hero-container'>
+        <video src='videos/video-1.mp4' autoPlay loop muted />
+        <h1>TRDMRK PRINTS</h1>
+        <h2>Create custom logos and designs for t-shirts and more</h2>
+        <div className='hero-btns'>
+          <Button
+            className='btns'
+            buttonStyle='btn--outline'
+            buttonSize='btn--large'
+          >
+            GET STARTED
+          </Button>
+          <Button
+            className='btns'
+            buttonStyle='btn--primary'
+            buttonSize='btn--large'
+          >
+            WATCH TRAILER <i className='far fa-play-circle' />
+          </Button>
         </div>
-    )
+      </div>
+    );
+  }
 }
-
-export default HeroSection;

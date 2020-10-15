@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../../App.css';
-import HeroSection from '../../Components/HeroSection'
+import Cards from '../../Components/Cards/Cards';
+import HeroSection from '../../Components/HeroSection/HeroSection';
 
-function Home() {
-    return (
-        <>
-            <HeroSection />
-        </>
-    );
+export default class Home extends Component {
+    render() {
+        return (
+            <>
+                <HeroSection />
+                <Cards />
+                <Footer />
+            </>
+        )
+    }
 }
-
-export default Home;

@@ -1,22 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import ItemsContext from './Contexts/ItemsContext';
 
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Routes/Home/Home';
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Switch>
-        <Route 
-          component={Home}
-          path="/"
-        />
-      </Switch>
-    </>
-  );
+class App extends Component {
+  static contextType = ItemsContext;
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: false
+    }
+  }
+
+  static getDerivedStateFromError(error) {
+    return { error: true };
+  }
+
+  componentDidMount() {
+    localStorage.clear();
+  }
+
+  render() {
+    return (
+      <>
+        <Navbar />
+        <main>
+          {this.state.error && <p className="error">There was an error.</p>}
+          <Switch>
+            <Route 
+                exact path="/"
+                component={Home}
+            />
+          </Switch>
+        </main>
+      </>
+    )
+  }
 }
 
-export default App;
+export default withRouter(App);
