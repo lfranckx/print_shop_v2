@@ -35,12 +35,10 @@ function Navbar() {
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
+                </div>
+
+                <div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
-                            </Link>
-                        </li>
                         <li className='nav-item'>
                             <Link
                                 to='/products'
@@ -59,6 +57,33 @@ function Navbar() {
                                 Services
                             </Link>
                         </li>
+                        <li className='nav-item'>
+                            <Link
+                                to='/templates'
+                                className='nav-links'
+                                onClick={closeMobileMenu}
+                            >
+                                Templates
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link
+                                to='/design-lab'
+                                className='nav-links'
+                                onClick={closeMobileMenu}
+                            >
+                                Design Lab
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to='/login'
+                                className='nav-links-mobile'
+                                onClick={closeMobileMenu}
+                            >
+                                Login
+                            </Link>
+                        </li>
                         <li>
                             <Link
                                 to='/sign-up'
@@ -69,8 +94,10 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
+                    
+                    {/* {button && <Button buttonStyle='btn--outline'>LOGIN</Button>} */}
+                    {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
             </nav>
         </>
     )
