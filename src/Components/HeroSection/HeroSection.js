@@ -15,7 +15,7 @@ export default class HeroSection extends Component  {
             buttonStyle='btn--outline'
             buttonSize='btn--large'
           >
-            CREATE ACCOUNT
+            YOUR ACCOUNT
           </Button>
           <Button
             className='btns'
