@@ -5,6 +5,7 @@ import ItemsContext from './Contexts/ItemsContext';
 
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Routes/Home/Home';
+import Products from './Routes/Products/Products';
 
 class App extends Component {
   static contextType = ItemsContext;
@@ -32,8 +33,12 @@ class App extends Component {
           {this.state.error && <p className="error">There was an error.</p>}
           <Switch>
             <Route 
-                exact path="/"
-                component={Home}
+              exact path="/"
+              component={Home}
+            />
+            <Route 
+              exact path="/products"
+              component={Products} 
             />
           </Switch>
         </main>
