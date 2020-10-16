@@ -1,19 +1,47 @@
-.toolbar {
-    padding: 5px;
-    background: #fff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: #444444;
+.products-container {
+    max-width: 920px;
+    margin: auto;
 }
 
-.toolbar-wrapper {
-    text-align: left;
+.toolbar {
+    padding: 10px 20px;
+    background: #fff;
+    text-align: center;
+    color: #444444;
+    border-radius: 4px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-  
-.toolbar h3 {
+
+.toolbar h1 {
     text-align: center;
     font-size: 30px;
-    margin-right: 50px
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.searchbar-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchbar input {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 2.5px 5px;
+    margin-left: 10px;
+    width: 250px;
+    font-size: 22px;
+}
+
+.searchbar input:active, .searchbar input:focus {
+    outline: none;
+    border-bottom: 1.1px solid rgb(77, 142, 254);
 }
