@@ -1,0 +1,19 @@
+.toolbar {
+    padding: 5px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #444444;
+}
+
+.toolbar-wrapper {
+    text-align: left;
+    display: flex;
+}
+  
+.toolbar h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-right: 50px
+}
