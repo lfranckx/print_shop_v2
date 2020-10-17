@@ -6,6 +6,7 @@ import ItemsContext from './Contexts/ItemsContext';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Routes/Home/Home';
 import Products from './Routes/Products/Products';
+import Footer from './Components/Footer/Footer';
 
 class App extends Component {
   static contextType = ItemsContext;
@@ -41,6 +42,7 @@ class App extends Component {
               component={Products} 
             />
           </Switch>
+          <Footer />
         </main>
       </>
     )

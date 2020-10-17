@@ -1,3 +1,8 @@
+.main-container {
+    padding: 50px;
+    background-color: #F6F6F6;
+}
+
 .products-container {
     max-width: 920px;
     margin: auto;
@@ -44,4 +49,8 @@
 .searchbar input:active, .searchbar input:focus {
     outline: none;
     border-bottom: 1.1px solid rgb(77, 142, 254);
+}
+
+::placeholder {
+    color: rgb(199, 203, 211)
 }

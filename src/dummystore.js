@@ -42,7 +42,7 @@ export default {
         },
         {
             id: 6,
-            src: "images/img-6jpg",
+            src: "images/img-6.jpg",
             alt: "T-shirt",
             text: "This is a sample image. Not an actual item for sale.",
             label: "T-Shirt",

@@ -10,8 +10,6 @@ export default class Home extends Component {
         return (
             <>
                 <HeroSection />
-                {/* <Cards /> */}
-                <Footer />
             </>
         )
     }

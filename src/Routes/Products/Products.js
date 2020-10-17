@@ -16,24 +16,26 @@ class Products extends Component {
         const { itemsList } = this.context;
 
         return (
-            <div className="products-container">
-                <div className="toolbar">
-                    <div className="toolbar-header">
-                        <h1>All Products</h1>
-                    </div>
-                    <div className="toolbar-search">
-                        <div className="searchbar">
-                            <form className="searchbar-form">
-                                <button className="searchbar-button">
-                                    <i className="fas fa-search"></i>
-                                </button>
-                                
-                                <input type="text" />
-                            </form>
+            <div className="main-container">
+                <div className="products-container">
+                    <div className="toolbar">
+                        <div className="toolbar-header">
+                            <h1>All Products</h1>
+                        </div>
+                        <div className="toolbar-search">
+                            <div className="searchbar">
+                                <form className="searchbar-form">
+                                    <button className="searchbar-button">
+                                        <i className="fas fa-search"></i>
+                                    </button>
+                                    
+                                    <input type="text" placeholder="search for apparel" />
+                                </form>
+                            </div>
                         </div>
                     </div>
+                        <Cards items={itemsList} />
                 </div>
-                    <Cards items={itemsList} />
             </div>
         )
     }

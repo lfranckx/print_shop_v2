@@ -1,6 +1,6 @@
 .footer-container {
     background-color: #242424;
-    padding: 40px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +22,7 @@
 .footer-subscription > p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
         'Lucida Sans', Arial, sans-serif;
+    color: #fff;
 }
 
 .footer-subscription-heading {
