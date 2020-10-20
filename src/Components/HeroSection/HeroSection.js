@@ -7,7 +7,7 @@ export default class HeroSection extends Component  {
     return (
       <div className='hero-container'>
         <video src='videos/video-1.mp4' autoPlay loop muted />
-        <h1>TRDMRK PRINTS</h1>
+        <h1>TRANSCENDENTAL MESSAGES</h1>
         <h2>Create custom logos and designs for t-shirts and more</h2>
         <div className='hero-btns'>
           <Button

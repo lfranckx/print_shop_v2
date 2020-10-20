@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join the TRDMRK newsletter to receive upcoming deals
+                    Join the TM PRINTS newsletter to receive upcoming deals
                 </p>
                 <p className='footer-subscription-text'>
                     You can unsubscribe at any time.
