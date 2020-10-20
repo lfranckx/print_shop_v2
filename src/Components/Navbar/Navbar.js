@@ -72,7 +72,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                Quotes                
+                                Design Lab                   
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -81,7 +81,7 @@ function Navbar() {
                                 className='nav-links-mobile'
                                 onClick={closeMobileMenu}
                             >
-                                Your Account
+                                Shopping Cart
                             </Link>
                         </li>
                     </ul>

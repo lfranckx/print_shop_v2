@@ -50,7 +50,7 @@ function Footer() {
                     <Link to='/'>Instagram</Link>
                     <Link to='/'>Facebook</Link>
                     <Link to='/'>Youtube</Link>
-                    <Link to='/'>Twitter</Link>
+                    {/* <Link to='/'>Twitter</Link> */}
                 </div>
                 {/* <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
@@ -119,7 +119,7 @@ function Footer() {
                         >
                             <i className='fab fa-youtube' />
                         </Link>
-                        <Link
+                        {/* <Link
                             className='social-icon-link twitter'
                             to='/'
                             target='_blank'
@@ -134,7 +134,7 @@ function Footer() {
                             aria-label='LinkedIn'
                         >
                             <i className='fab fa-linkedin' />
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </section>
