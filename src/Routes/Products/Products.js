@@ -13,7 +13,22 @@ class Products extends Component {
     }
 
     render() {
+        const { error } = this.context;
         const { itemsList } = this.context;
+
+        if (itemsList.length === 0) {
+            return (
+                <div className="loader">
+                    <div className="spinner">Loading</div>
+                </div>
+            )
+        }
+
+        let filteredList = itemsList.filter(item => {
+            return item.label.toLowerCase().indexOf(
+                this.context.search.toLowerCase()
+            ) !== -1;
+        });
 
         return (
             <div className="main-container">
@@ -34,7 +49,7 @@ class Products extends Component {
                             </div>
                         </div>
                     </div>
-                        <Cards items={itemsList} />
+                        <Cards items={filteredList} />
                 </div>
             </div>
         )

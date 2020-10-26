@@ -17,7 +17,8 @@ const ItemsContext = React.createContext({
     clearItemsList: () => {},
     setUser: () => {},
     clearUser: () => {},
-    handleClick: () => {}
+    handleClick: () => {},
+    updateSearch: () => {}
 });
 export default ItemsContext;
 
@@ -27,7 +28,8 @@ export class ItemsProvider extends Component {
         item: nullItem,
         itemsList: [],
         user: nullUser,
-        click: false
+        click: false,
+        search: ""
     };
 
     setError = error => {
@@ -67,6 +69,10 @@ export class ItemsProvider extends Component {
         this.setState({ click: !this.state.click });
     };
 
+    updateSearch = ev => {
+        this.setState({ search: ev.target.value.substr(0, 20) });
+    }
+
     render() {
         const value = {
             state: this.state,
@@ -75,6 +81,7 @@ export class ItemsProvider extends Component {
             itemsList: this.state.itemsList,
             user: this.state.user,
             click: this.state.click,
+            search: this.state.search,
             setError: this.setError,
             clearError: this.clearError,
             setItem: this.setItem,
@@ -83,7 +90,8 @@ export class ItemsProvider extends Component {
             clearItemsList: this.clearItemsList,
             setUser: this.setUser,
             clearUser: this.clearUser,
-            handleClick: this.handleClick
+            handleClick: this.handleClick,
+            updateSearch: this.updateSearch
         };
 
         return (
