@@ -16,6 +16,7 @@ export default class CardsItem extends Component {
                      >
                          <img src={item.src} alt={item.alt} 
                              className="cards__item__img" />
+                        <figcaption>{item.label}</figcaption>
                      </figure>
                      <div className="cards__item__info">
                          <h5 className="cards__item__text">{item.text}</h5>
